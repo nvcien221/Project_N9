@@ -1,208 +1,98 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+
+html
+{
+    width: 1525px;
+    height: 735px;
 }
-:root{
- --primary-clor: #3c3737;
- --x_card: 468px;
- --y_card: 674px;
- --r_html:60%;
- --r_css: 50%;
- --r_javascript:20%;
- --r_reactjs:10%;
-}
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-clor);
-}
-.card{
-    position: relative;
-    background-color: #4b4646;
-    height: var(--y_card);
-    width: var(--x_card);
-    border-radius: 20px;
-    background: linear-gradient(145deg, #232222, #181717);
-    box-shadow:  12px 10px 40px #000,
-                 -12px -12px 40px #d5b9b9;
-}
-.header{
-    height: 136px;
-    width: 100%;
-    overflow: hidden;
+#anh1{
     position: absolute;
-    z-index: 0;
-    border-bottom: 4px solid #443f3f ;
-}
-.background_card{
-display: block;
-width: 100%;
-}
-.card_img{
-    display: flex;
-    width: 120px;
-    height: 120px;
-    border: 5px solid #443f3f;
-    border-radius: 50%;
-    margin: 64px 32px auto;
-    position: absolute;
-    overflow: hidden;
-    opacity: 1;
-}
- 
-img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: center;
-}
-.card_content{
-   position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin: 136px 0 40px 0;
-}
-.content{
-    min-height: 70px;
-}
-ul.name{
-    list-style: none;
-}
-#target{
-    color:#fff;
-    font-size: 21px;
-    margin: 5px 0 auto 5px;
-    text-transform: uppercase;
+    width: 1525px;
+    height: 735px;
+
 }
 
-.content_2:after{
-    content: "";
-    display: flex;
-    width: 25px;
-    height: 5px;
-    color: #f4ecec;
+#anh2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 35px;
+    left: 670px;
+    opacity: 80%;
+    scale: 130%;
+
+}
+#anh3{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 570px;
+    left: 650px;
+    scale: 50%;
+}
+#anh4{
+    position: absolute;
+    color: rgba(199, 70, 70, 0.095);
+    height: 80px;
+    width: 80px;
+    top: 570px;
+    left: 800px;
+    opacity: 60%;
+    scale: 55%;
+}
+#anh5{position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 570px;
+    left: 727px;
+    scale: 55%;
     
 }
-body{
-    background: url(https://anhdepfree.com/wp-content/uploads/2021/01/hinh-anh-goc-may-don-gian-cuc-dep.jpg);
-    background-size: cover;
-    background-position-y: -20px;
+#anh6{
+    position: absolute
+    top:50px;
 }
-.contact{
-    list-style: none;
-}
-.name_contact,.name_education, .name_skill , .name_interest{
-    margin-bottom: 10px;
-    color:aquamarine;
-    font-size: 20px;
-}
-.contact li i, .list p3 {
-    font-size: 13.5px;
-}
-.name_contact:after, .name_education:after , .name_skill:after , .name_interest:after{
-    content: "";
-    display: flex;
-    left: 0;
-    width: 95%;
-    height: 2px;
-    background-color: #d5b9b9;
+    
+#anh12
+{
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    width:500px ;
+    height: 500px;
 }
 
-.list_interest{
-    margin: 0 4px ;
-}
-p3{
-    color:aquamarine;
-    font-size: 15px;
-}
-p2{
-    color: #fff;
-    font-size: 13px;
-    display: inline-block;
-    padding: 0 4px 0;
-}
-.list{
-margin:0 0 10px 6px;
-}
-.social{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.social a{
-    display: inline;
-    color:#fff;
-    margin: 0px 24px;
-    font-size: 30px;
-}
-.list_skills{
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 25% 75%;
+#khungten{
+    position: absolute;
+    scale: 10%;
+    top: -100px;
+    left: -880px;
+
 }
 
-.contact_me button{
-    background-color: #000;
-    padding: 12px 20px;
-    margin: 0 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #fff;
-    border: none;
+#chuchay{ 
+    position: absolute;
+    color: yellow;
+    top: 240px;
+left: 650px; 
+width: 244px;
+height: 50px;
+font-size: large;
+   
+   
+
 }
-.contact_me button:hover{
-    background-color: var(--primary-clor);
-    cursor: pointer;
+#thongtin{
+    position: absolute;
+    color: beige;
+    font-size: large;
+    top: 330px;
+    left: 630px;
 }
-.rank_skill{
-    height: 100%;
-    background-color: #f4ecec;
-    animation: 3s change ;
+#gach{
+    position: absolute;
+    color: aqua;
+    top: 500px;
+    left: 600px;
+    width: 50px;
+    height: 10px;
 }
-.skill_html{
-    width:var(--r_html);
-}
-.skill_css{
-    width: var(--r_css);
-}
-.skill_javascript{
-    width: var(--r_javascript);
-}
-.skill_reactjs{
-    width: var(--r_reactjs);
-}
-
-/* @keyframes changne{
-    0%{
-        background-color: rgba(144, 247, 140, 0.7);
-        box_shadow: 0 0 5px #fff;
-        transform: translateY(3px);
-        opacity: 0;
-    }
-    50%{
-        background-color: rgba(92, 247, 86, 0.7);
-        box_shadow: 0 0 5px #fff;
-        opacity: 0.5;
-    }
-    100%{
-        background-color: rgba(92, 247, 86, 0.7);
-        box_shadow: 0 0 5px #fff;
-        opacity: 1;
-    } 
-} */
-
-
-
-
-
-
-
-
-
