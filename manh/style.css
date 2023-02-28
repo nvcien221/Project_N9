@@ -1,0 +1,98 @@
+
+html
+{
+    width: 1525px;
+    height: 735px;
+}
+#anh1{
+    position: absolute;
+    width: 1525px;
+    height: 735px;
+
+}
+
+#anh2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 35px;
+    left: 670px;
+    opacity: 80%;
+    scale: 130%;
+
+}
+#anh3{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 570px;
+    left: 650px;
+    scale: 50%;
+}
+#anh4{
+    position: absolute;
+    color: rgba(199, 70, 70, 0.095);
+    height: 80px;
+    width: 80px;
+    top: 570px;
+    left: 800px;
+    opacity: 60%;
+    scale: 55%;
+}
+#anh5{position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 570px;
+    left: 727px;
+    scale: 55%;
+    
+}
+#anh6{
+    position: absolute
+    top:50px;
+}
+    
+#anh12
+{
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    width:500px ;
+    height: 500px;
+}
+
+#khungten{
+    position: absolute;
+    scale: 10%;
+    top: -100px;
+    left: -880px;
+
+}
+
+#chuchay{ 
+    position: absolute;
+    color: yellow;
+    top: 240px;
+left: 650px; 
+width: 244px;
+height: 50px;
+font-size: large;
+   
+   
+
+}
+#thongtin{
+    position: absolute;
+    color: beige;
+    font-size: large;
+    top: 330px;
+    left: 630px;
+}
+#gach{
+    position: absolute;
+    color: aqua;
+    top: 500px;
+    left: 600px;
+    width: 50px;
+    height: 10px;
+}
