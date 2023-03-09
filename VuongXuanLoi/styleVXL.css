@@ -1,0 +1,36 @@
+body{
+    background-color: green;
+    padding: 45px;
+    color: white;
+}
+.Ha1{
+    border-radius: 200px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+}
+p{
+    font-family: system-ui;
+}
+.button{
+    margin-bottom: 20px;
+    background-color: white;
+    border: 0;
+    width: 300px;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+    font-family: 'Roboto Condensed' , cursive;
+    font-size: 17px;
+    transition-duration: 0.3s ;
+    transition-property: color, background-color;
+    box-shadow: 10px 12px 248px -196px rgba(0,0,0,1);
+    -webkit-box-shadow: 10px 12px 248px -196px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 12px 248px -196px rgba(0,0,0,1);
+    cursor: pointer;
+}
+.button:hover{
+    color:white;
+    background-color: black;
+}
