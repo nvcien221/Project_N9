@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samar</title>
+    <link rel="shortcut icon" href="./image/loading-02.svg" type="image/x-icon">
+    
 
 
     <!-- Font google -->
@@ -13,75 +15,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-     
-    Ahihi
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- JQUERY  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <!-- Font_awesome  -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- lby_animate  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <!-- Links__fancybox  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
+
+     <!-- OWL_Carousel  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+   />
+
+
+
     <link rel="stylesheet" href="./css/flaticon/flaticon.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <section class="header">
-        <div class="container header__content">
-            <a href="#">
-                <img src="./image/logo-2.png" alt="Logo samar" class="header__logo">
-            </a>
-            <div class="header__navbar">
-                <ul>
-                    <li>
-                        <a href="">
-                            <span>Home</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>Pages</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>Services</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>Post Layout</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>Blog</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span>Contact Us</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                    </li>
-                </ul>
-                <div>
-                    <button class="btn btn--header">GET A QUOTE</button>
+    <header>
+        <div class="container">
+            <div class="header__content">
+                <a href="#">
+                    <img src="./image/logo-2.png" alt="Logo samar" class="header__logo">
+                </a>
+                <div class="header__navbar">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Home</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Pages</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Services</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Post Layout</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Blog</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Contact Us</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="btn btn--header">GET A QUOTE</button>
+                    </div>
+                    
                 </div>
-                
+
             </div>
         </div>
-    </section>
+    </header>
 
 
     <section class="carousel">
@@ -105,7 +122,9 @@
                             <p>Outstanding mobile design</p>
                         </li>
                     </ul>
-                <button class="btn animate__animated animate__fadeInUp animate__delay-4s">GET A QUOTE</button>
+                <button class="btn animate__animated animate__fadeInUp animate__delay-4s">
+                    GET A QUOTE
+                </button>
                 </div>
 
                 <div class="crs__content__right">
@@ -198,25 +217,31 @@
             <div class="number__content">
                 <div class="number__item">
                     <i class="flaticon-smile"></i>
-                    <p>18Ml</p>
+                    <div class="box__number">
+                        <span class="counter">18</span>Ml
+                    </div>
                     <p>Satisfied Clients</p>
                 </div>
 
                 <div class="number__item">
                     <i class="flaticon-confetti"></i>
-                    <p>20Ml</p>
+                    <div class="box__number">
+                        <span class="counter">20</span>Ml
+                    </div>
                     <p>Project Completed</p>
                 </div>
 
                 <div class="number__item">
                     <i class="flaticon-startup"></i>
-                    <p>30Ml</p>
+                    <div class="box__number">
+                        <span class="counter">30</span>Ml
+                    </div>
                     <p>Project Lunched</p>
                 </div>
 
                 <div class="number__item">
                     <i class="flaticon-confetti"></i>
-                    <p>50</p>
+                    <p class="counter">50</p>
                     <p>Years Completed</p>
                 </div>
             </div>
@@ -228,13 +253,13 @@
         <div class="container">
             <div class="feature__content">
                 <div class="feature__left">
-                    <div class="title">
+                    <div class="title wow animate__animated animate__fadeInLeft" style="animation-duration: 2s; animation-delay: 0.2s;">
                         <p>Our Feature</p>
                         <h2>Behind The Story    <br>
                             Of Samar Agency</h2>
                     </div>
                     <div class="feature__box">
-                        <div class="feature__item feature1">
+                        <div class="feature__item feature1 wow animate__animated animate__fadeInRight" style="animation-duration: 2s; animation-delay: 0.4s;">
                             <div class="feature__bgr">
                                 <i class="flaticon-idea"></i>
                                 <span class="feature__item__infor">
@@ -244,7 +269,7 @@
                             </div>
                         </div>
 
-                        <div class="feature__item feature2">
+                        <div class="feature__item feature2 wow animate__animated animate__fadeInRight" style="animation-duration: 2s; animation-delay: 0.6s;">
                             <div class="feature__bgr">
                                 <i class="flaticon-coding"></i>
                                 <span class="feature__item__infor">
@@ -254,7 +279,7 @@
                             </div>
                         </div>
 
-                        <div class="feature__item feature3">
+                        <div class="feature__item feature3 wow animate__animated animate__fadeInRight" style="animation-duration: 2s; animation-delay: 0.8s;">
                             <div class="feature__bgr">
                                 <i class="flaticon-rocket"></i>
                                 <span class="feature__item__infor">
@@ -285,11 +310,18 @@
                 <h2>Our Latest Work</h2>
             </div>
             <div class="portfolio__content">
-                <div class="portfolio__item portfolio__item1">
+                <div class="portfolio__item portfolio__item1 wow animate__ wow animate__animated animate__fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                     <img src="./image/pic1_2.jpg" alt="">
                     <div class="portfolio__item__overlay">
                         <div class="overlay__icon">
+                            <a
+                            data-fancybox="gallery"
+                            data-src="./image/pic1_2.jpg"
+                            data-caption="Design 1"
+                            data-thumb="./image/pic1_2.jpg"
+                            >
                             <i class="la la-plus"></i>
+                            </a>
                         </div>
                         <div class="overlay__text">
                             <h3>Software Landing</h3>
@@ -297,11 +329,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item wow animate__ wow animate__animated animate__fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                     <img src="./image/pic2_1.jpg" alt="">
                     <div class="portfolio__item__overlay">
                         <div class="overlay__icon">
+                            <a
+                            data-fancybox="gallery"
+                            data-src="./image/pic2_1.jpg"
+                            data-caption="Design 2"
+                            data-thumb="./image/pic2_1.jpg"
+                            >
                             <i class="la la-plus"></i>
+                            </a>
                         </div>
                         <div class="overlay__text">
                             <h3>Software Landing</h3>
@@ -309,11 +348,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item wow animate__ wow animate__animated animate__fadeInUp animate__delay-1s animated" style="visibility: visible; animation-name: fadeInUp;">
                     <img src="./image/pic3_1.jpg" alt="">
                     <div class="portfolio__item__overlay">
                         <div class="overlay__icon">
+                            <a
+                            data-fancybox="gallery"
+                            data-src="./image/pic3_1.jpg"
+                            data-caption="Design 3"
+                            data-thumb="./image/pic3_1.jpg"
+                            >
                             <i class="la la-plus"></i>
+                            </a>
                         </div>
                         <div class="overlay__text">
                             <h3>Software Landing</h3>
@@ -321,11 +367,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__item">
+                <div class="portfolio__item wow animate__ wow animate__animated animate__fadeInUp animate__delay-1s animated" style="visibility: visible; animation-name: fadeInUp;">
                     <img src="./image/pic4.jpg" alt="">
                     <div class="portfolio__item__overlay">
                         <div class="overlay__icon">
+                            <a
+                            data-fancybox="gallery"
+                            data-src="./image/pic4.jpg"
+                            data-caption="Design 4"
+                            data-thumb="./image/pic4.jpg"
+                            >
                             <i class="la la-plus"></i>
+                            </a>
                         </div>
                         <div class="overlay__text">
                             <h3>Software Landing</h3>
@@ -333,11 +386,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__item portfolio__item5">
+                <div class="portfolio__item portfolio__item5 wow animate__ wow animate__animated animate__fadeInUp animate__delay-2s animated" style="visibility: visible; animation-name: fadeInUp;">
                     <img src="./image/pic5.jpg" alt="">
                     <div class="portfolio__item__overlay">
                         <div class="overlay__icon">
+                            <a
+                            data-fancybox="gallery"
+                            data-src="./image/pic5.jpg"
+                            data-caption="Design 5"
+                            data-thumb="./image/pic5.jpg"
+                            >
                             <i class="la la-plus"></i>
+                            </a>
                         </div>
                         <div class="overlay__text">
                             <h3>Software Landing</h3>
@@ -345,11 +405,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__item portfolio__item6">
+                <div class="portfolio__item portfolio__item6  wow animate__ wow animate__animated animate__fadeInUp animate__delay-1s animated" style="visibility: visible; animation-name: fadeInUp;">
                     <img src="./image/pic6.jpg" alt="">
                     <div class="portfolio__item__overlay">
                         <div class="overlay__icon">
+                            <a
+                            data-fancybox="gallery"
+                            data-src="./image/pic6.jpg"
+                            data-caption="Design 6"
+                            data-thumb="./image/pic6.jpg"
+                            >
                             <i class="la la-plus"></i>
+                            </a>
                         </div>
                         <div class="overlay__text">
                             <h3>Software Landing</h3>
@@ -367,7 +434,7 @@
                 <p>Our Blog</p>
                 <h2>Latest News & Blog</h2>
             </div>
-            <div class="blog__content">
+            <div class="blog__content carousel__reaction owl-carousel owl-theme">
                 <div class="blog__content__item">
                     <div class="blog__item--header">
                         <img src="./image/pic1_1.jpg" alt="">
@@ -382,7 +449,7 @@
                         <div style="margin-right: 20px;">
                             <i class="las la-user-circle"></i>
                             By
-                            <span>Johne Doe</span>
+                            <span class="blog__text--color">Johne Doe</span>
                         </div>
                         <div>
                             <i class="las la-comment"></i>
@@ -405,7 +472,7 @@
                         <div style="margin-right: 20px;">
                             <i class="las la-user-circle"></i>
                             By
-                            <span>Johne Doe</span>
+                            <span class="blog__text--color">Johne Doe</span>
                         </div>
                         <div>
                             <i class="las la-comment"></i>
@@ -428,7 +495,7 @@
                         <div style="margin-right: 20px;">
                             <i class="las la-user-circle"></i>
                             By
-                            <span>Johne Doe</span>
+                            <span style="color: #f55f8d;">Johne Doe</span>
                         </div>
                         <div>
                             <i class="las la-comment"></i>
@@ -443,12 +510,12 @@
 
     <footer>
         <div class="container">
-            <div class="footer__top">
+            <div class="footer__top wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                 <div class="footer__text">
                     <h2>Subscribe To Our Newsletter</h2>
                 </div>
                 <div class="footer__form">
-                    <form action="">
+                    <form>
                         <input type="text" placeholder="Your Email Address">
                         <button>
                             <i class="las la-paper-plane"></i>
@@ -457,7 +524,7 @@
                 </div>
             </div>
             <div class="footer__content">
-                <div class="footer__item">
+                <div class="footer__item wow animate__animated animate__fadeInUp animate__delay-1s" style="visibility: visible; animation-name: fadeIn;">
                     <a href="#">
                         <img src="./image/logo-white.png" alt="">
                     </a>
@@ -483,7 +550,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__item">
+                <div class="footer__item wow animate__animated animate__fadeInUp animate__delay-1s" style="visibility: visible; animation-name: fadeIn;">
                     <a href="#">
                         <h3>Our links</h3>
                     </a>
@@ -520,7 +587,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__item">
+                <div class="footer__item wow animate__animated animate__fadeInUp animate__delay-1s" style="visibility: visible; animation-name: fadeIn;">
                     <a href="#">
                         <h3>Our Services</h3>
                     </a>
@@ -557,7 +624,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__item">
+                <div class="footer__item wow animate__animated animate__fadeInUp animate__delay-1s" style="visibility: visible; animation-name: fadeIn;">
                     <a href="#">
                         <h3>Other links</h3>
                     </a>
@@ -618,15 +685,31 @@
         </div>
     </footer>
 
+    <!-- BACK TO TOP  -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
 
 
 
 
-    <!-- Jquery  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Lbr__count  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp({
+            delay: 10,
+            time: 3000
+        });
+    </script>
+ 
 
     <!-- lbr__wow  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script src="js/wow.min.js"></script>
               <script>
@@ -634,10 +717,26 @@
               </script>
 
 
+        <!-- Fancybox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+        <!-- OWL JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+          $(".carousel__reaction").owlCarousel({
+            loop: true, //lặp lại các item
+            margin: 10, //khoảng cách giữa các item
+            nav: true, //hiện mũi tên trái phải
+          });
+        });
+      </script>
 
 
-
-
+        <script src="./js/util.js"></script>
+        <script src="./js/main.js"></script>
 </body>
-
 </html>
