@@ -11,6 +11,10 @@ html, body{
 }
 :root{
     --animate-duration: 2s;
+    --bgr-color: #fff;
+    --primary: #dc4f72;
+    --title-color: #2C3038;
+    --text-color: #5a5a5a;
 }
 .container{
     width: 80%;
@@ -25,6 +29,21 @@ header{
     width: 100%;
     z-index: 1;
     background-color: #333;
+    border-bottom: 1px solid white;
+    transition: all 0.3s;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.fixed-top {
+    position: fixed;
+    padding: 2px 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.nav-fixed{
+    padding: 0;
+    height: auto;
 }
 .header__content{
     display: flex;
@@ -74,7 +93,7 @@ header{
     transition: all 1s;
     display: inline-block;
 }
-.header__navbar a:hover span{
+.header__navbar li a:hover span{
     animation: UpToDown 0.4s;
     cursor: pointer;
 }
@@ -105,6 +124,112 @@ header{
 }
 .btn--header:hover{
     background-position: right center;
+}
+
+.search-right{
+    display: block;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+@media (min-width: 992px){
+    .search-right{
+        margin-bottom: 0;
+    }
+}
+.search-right .search-icon{
+    color: #5a5a5a;
+    font-size: 15px;
+    opacity: 0.7;
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    background: #F7F9FC;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #eee;
+    position: relative;
+    top: -6px;
+    margin-right: 20px;
+}
+
+.search-overlay {
+    position: absolute;
+    top: 0;
+    left: -57%;
+    right: 0;
+    height: 1016px;
+    width: 1589px;
+    opacity: 0.97;
+    z-index: 99;
+    background: #000000ba;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.search-right .popup .closeInterface {
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    transition: all 0.2s;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+.search-right .popup .closeInterface:hover{
+    opacity: 1;
+}
+.show{
+    display: block !important;
+}
+
+.search-right .popup {
+    position: relative;
+    margin: 0rem auto;
+    padding: 15px;
+    top: 50%;
+    max-width: 600px;
+}
+.popup form{
+    opacity: 1;
+}
+@media (min-width: 576px){
+.d-sm-flex {
+    display: flex !important;
+    }
+}
+.search-right .popup form input[type="search"]{
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+    background: white;
+    color: #5a5a5a;
+    border: 1px solid #eee;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 55px;
+    padding: 15px 20px 12px;
+    border-right: none;
+}
+.search-right .popup form input:focus-visible{
+    outline: none;
+}
+.search-right .popup form button {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #F5F9FC;
+    font-weight: 500;
+    height: 55px;
+    border: none;
+    background: #dc4f72;
+    padding: 0 25px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: all 0.5s;
+}
+.search-right .popup form button:hover {
+    opacity: 1;
 }
 
 
@@ -183,7 +308,7 @@ header{
     /* DEMOITEM  */
 .slide{
     width: 100%;
-    max-height: 1080px;
+    /* max-height: 1080px; */
     overflow: hidden;
 }
 .carousel-item img{
@@ -279,14 +404,15 @@ header{
         width: 100%;
         display: flex;
         justify-content:space-around;
+        padding: 50px 0 0;
     }
     .blog__content__item{
         width: 100%;
         border-radius: 8px;
         background-color: rgba(245, 95, 141, 0.1);
         text-align: left;
-        max-width: 380px;
-        margin: 0 10px;
+        width: 380px;
+        margin: 0 8px 34px;
     }
     .blog__content__item img{
         display: block;
@@ -340,7 +466,7 @@ header{
         bottom: -20px;
     }
     .blog__item--body{
-        padding: 30px 15px 20px 15px;
+        padding: 20px 15px 0 15px;
         line-height: 1.4;
         margin-bottom: 20px;
     }
@@ -552,6 +678,8 @@ header{
     grid-row: 2 / span 2;
     grid-column: 3 / span 1;
 }
+
+
 
 
     /* FOOTER  */

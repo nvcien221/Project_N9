@@ -38,6 +38,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
    />
 
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
    <!-- BS  -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
@@ -48,7 +51,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <div class="container">
             <div class="header__content">
                 <a href="#" class="box__logo">
@@ -93,6 +96,22 @@
                             </a>
                         </li>
                     </ul>
+
+                    <div class="search-right">
+                        <a href="#search" id="showOverlay">
+                            <span class="search-icon fa-solid fa-magnifying-glass"></span>
+                        </a>
+                        <div id="search" class="search-overlay">
+                            <div class="popup">
+                                <form action="" class="d-sm-flex">
+                                    <input type="search" name="" id="" placeholder="Hãy cho tôi biết bạn muốn tìm kiếm sản phẩm nào!">
+                                    <button type="submit">Search</button>
+                                </form>
+                                <a href="#close" class="closeInterface" id="closeOverlay">x</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div>
                         <button class="btn btn--header">GET A QUOTE</button>
                     </div>
@@ -131,7 +150,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./image/slide3.jpg" class="d-block w-100" alt="...">
+                <img src="./image/slider-03.jpg" class="d-block w-100" alt="...">
                 <div class="content-slider">
                     <h2 class="text-silder">COFFEE FACTORY</h2>
                     <img style="margin: 0 0 10px;" src="./image/title-separator.png" alt="">
@@ -311,15 +330,15 @@
     <!-- Menu End -->
 
     <section class="blog">
-        <div class="container">
+        
             <div class="title">
                 <p>Best seller</p>
                 <h2>
                     The biggest secret of pitching is PREPARATION
                 </h2>
             </div>
-            <div class="blog__content carousel__reaction owl-carousel owl-theme">
-                <div class="blog__content__item">
+            <div class="blog__content carousel__reaction owl-carousel owl-theme row">
+                <div class="blog__content__item col-3">
                     <div class="blog__item--header">
                         <img src="./image/feedback_1.jpg" alt="">
                         <p>23 MARCH 2022</p>
@@ -330,15 +349,14 @@
                     </div>
                     
                     <div class="blog__item--body">
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                        <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo
-                            quam.</p>
+                        <h3>Cafe Arabica</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, non!</p>
                     </div>
                     <div class="blog__item--footer">
                         <div style="margin-right: 20px;">
-                            <i class="las la-user-circle"></i>
-                            By
-                            <span class="blog__text--color">Johne Doe</span>
+                            <i class="fa-solid fa-cart-plus"></i>
+                            
+                            <span class="blog__text--color">BUY NOW</span>
                         </div>
                         <div>
                             <i class="las la-comment"></i>
@@ -347,7 +365,7 @@
                     </div>
                 </div>
 
-                <div class="blog__content__item">
+                <div class="blog__content__item col-3">
                     <div class="blog__item--header">
                         <img src="./image/feedback_3.jpg" alt="">
                         <p>23 MARCH 2022</p>
@@ -356,15 +374,14 @@
                         <p>-20%</p>
                     </div>
                     <div class="blog__item--body">
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                        <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo
-                            quam.</p>
+                        <h3>Cafe Cherry</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, animi!</p>
                     </div>
                     <div class="blog__item--footer">
                         <div style="margin-right: 20px;">
-                            <i class="las la-user-circle"></i>
-                            By
-                            <span class="blog__text--color">Johne Doe</span>
+                            <i class="fa-solid fa-cart-plus"></i>
+                            
+                            <span class="blog__text--color">BUY NOW</span>
                         </div>
                         <div>
                             <i class="las la-comment"></i>
@@ -373,7 +390,7 @@
                     </div>
                 </div>
 
-                <div class="blog__content__item">
+                <div class="blog__content__item col-3">
                     <div class="blog__item--header">
                         <img src="./image/cafeCold_3.jpg" alt="">
                         <p>23 MARCH 2022</p>
@@ -382,15 +399,89 @@
                         <p>-15%</p>
                     </div>
                     <div class="blog__item--body">
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                        <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo
-                            quam.</p>
+                        <h3>Cà phê Mocha</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga?</p>
                     </div>
                     <div class="blog__item--footer">
                         <div style="margin-right: 20px;">
-                            <i class="las la-user-circle"></i>
-                            By
-                            <span style="color: #f55f8d;">Johne Doe</span>
+                            <i class="fa-solid fa-cart-plus"></i>
+                            
+                            <span style="color: #f55f8d;">BY NOW</span>
+                        </div>
+                        <div>
+                            <i class="las la-comment"></i>
+                            <span>Comments 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__content__item col-3">
+                    <div class="blog__item--header">
+                        <img src="./image/feedback_3.jpg" alt="">
+                        <p>23 MARCH 2022</p>
+                    </div>
+                    <div class="product__card__sale">
+                        <p>-20%</p>
+                    </div>
+                    <div class="blog__item--body">
+                        <h3>Cafe Espresso </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.</p>
+                    </div>
+                    <div class="blog__item--footer">
+                        <div style="margin-right: 20px;">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            
+                            <span class="blog__text--color">BUY NOW</span>
+                        </div>
+                        <div>
+                            <i class="las la-comment"></i>
+                            <span>Comments 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__content__item col-3">
+                    <div class="blog__item--header">
+                        <img src="./image/feedback_3.jpg" alt="">
+                        <p>23 MARCH 2022</p>
+                    </div>
+                    <div class="product__card__sale">
+                        <p>-20%</p>
+                    </div>
+                    <div class="blog__item--body">
+                        <h3>Cafe Cappuccino</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptatem?</p>
+                    </div>
+                    <div class="blog__item--footer">
+                        <div style="margin-right: 20px;">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        
+                            <span class="blog__text--color">BUY NOW</span>
+                        </div>
+                        <div>
+                            <i class="las la-comment"></i>
+                            <span>Comments 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__content__item col-3">
+                    <div class="blog__item--header">
+                        <img src="./image/feedback_3.jpg" alt="">
+                        <p>23 MARCH 2022</p>
+                    </div>
+                    <div class="product__card__sale">
+                        <p>-20%</p>
+                    </div>
+                    <div class="blog__item--body">
+                        <h3>Cà phê chồn</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptatem!</p>
+                    </div>
+                    <div class="blog__item--footer">
+                        <div style="margin-right: 20px;">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            
+                            <span class="blog__text--color">BUY NOW</span>
                         </div>
                         <div>
                             <i class="las la-comment"></i>
@@ -399,7 +490,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </section>
 
 
@@ -529,6 +620,10 @@
         </div>
     </section>
 
+
+
+
+
    
 
     <footer>
@@ -561,14 +656,14 @@
                         </li>
                         <li>
                             <i class="fa fa-envelope"></i>
-                            <span>info@example.com <br>
-                                services@gmail.com
+                            <span>cafechill.com <br>
+                                cafechill@gmail.com
                             </span>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Demo Address #8901 Marmora <br>
-                                Road City
+                            <span>Demo Address #8901 PTIT <br>
+                                Hà Đông-Hà Nội
                             </span>
                         </li>
                     </ul>
@@ -749,8 +844,11 @@
     </script>
 
     <!-- BS  -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- owlcarousel -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -763,7 +861,22 @@
       </script>
 
 
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('header').addClass('nav-fixed');
+            }
+            else{
+                $('header').removeClass('nav-fixed');
+            }
+        })
+    })
+</script>
+
+
         <script src="./js/util.js"></script>
         <script src="./js/main.js"></script>
+        <script src="./js/mainAd.js"></script>
 </body>
 </html>
