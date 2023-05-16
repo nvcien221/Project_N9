@@ -137,7 +137,7 @@ header{
         margin-bottom: 0;
     }
 }
-.search-right .search-icon{
+.search-right .search-icon, .search-icon{
     color: #5a5a5a;
     font-size: 15px;
     opacity: 0.7;
@@ -152,14 +152,21 @@ header{
     top: -6px;
     margin-right: 20px;
 }
+.cartShop i{
+    font-size: 18px;
+}
+.cartShop .search-icon{
+    position: relative;
+    top: -3px;
+}
 
 .search-overlay {
     position: absolute;
-    top: 0;
-    left: -57%;
+    top: -10%;
+    left: -67%;
     right: 0;
     height: 1016px;
-    width: 1589px;
+    width: 1692px;
     opacity: 0.97;
     z-index: 99;
     background: #000000ba;
